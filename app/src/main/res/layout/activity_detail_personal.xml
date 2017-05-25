@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.androidkejar_2.list_view.ListActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="employee.information.EmployeeInformationActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlePersonalData"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="10dp"
+                    android:text="Master Data"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Employee No"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="BSI00370"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Gender"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Male"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Identity No"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="1122333444555667"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Birth Place"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Jakarta"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Religion"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Islam"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Nationality"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Indonesia"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Marital Status"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Married"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="NPWP"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="112.2331-122.33"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"
+            android:text="Education"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Edu. Level"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="S1"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="University"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Budi Luhur University"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="GPA"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="3.65 of 4.00"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Location"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Jakarta"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"
+            android:text="Family"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Spouse Name"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Fitri F."
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Phone"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="081311438575"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Email"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="fitri.123@gmail.com"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="105dp"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Address"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/DetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8dp"
+                    android:text="Jl. Radio Dalam No. 32"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"></View>
+
+    </LinearLayout>
+</ScrollView>

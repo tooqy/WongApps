@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WongApps</string>
+    <string name="app_title">HR Management System</string>
+
+    <!-- Custom String -->
+    <string name="login_title">Coffee Cups</string>
+    <string name="user_hint">Username</string>
+    <string name="pass_hint">Password</string>
+    <string name="login_message">Input User: tooqy and Password 12345</string>
+
+
+    <string name="about">
+        Lorem ipsum dolor sit amet, ne per perfecto tractatos imperdiet, cu tale epicuri accusata ius. An simul insolens urbanitas duo. Eu iudicabit sententiae est, eam id tota sententiae accommodare. No qui homero consulatu reprimique. Eum in forensibus dissentias.
+    </string>
+
+</resources>

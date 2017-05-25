@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.androidkejar_2.list_view.ListActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="employee.information.EmployeeInformationActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/emp_photo"
+                android:layout_width="@dimen/image_125"
+                android:layout_height="@dimen/image_125"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="8dp"
+                android:padding="10dp"
+                android:src="@drawable/professor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="5dp"
+                        android:text="Mastuki"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_25" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="8dp"
+                        android:text="Senior Android Developer"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="8dp"
+                        android:text="Active since Nov 11th, 2011"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_14" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titlePersonalData"
+                style="@style/TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Personal Data" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlePersonalData"
+                android:orientation="vertical">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Date of Birth"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="07 July 1987"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Phone"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="081280953848"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Email"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="mastuki07@gmail.com"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Address"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Jl. Radio Dalam No. 32"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:onClick="seeDetailPersonalData"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="10dp"
+                    android:text="See More >"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleEmployment"
+                style="@style/TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Employment History" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEmployment"
+                android:orientation="vertical">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Company"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="PT. Berlian Sistem Informasi"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Position"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="IT Business Analyst"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Period"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Nov 2014 - Now"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:onClick="seeDetailEmploymentHistory"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="10dp"
+                    android:text="See More >"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titlePayrollConfig"
+                style="@style/TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Training History" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlePayrollConfig"
+                android:orientation="vertical">
+
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Training 1"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Project Managment"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 2 columns -->
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:width="105dp"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="Training 2"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/DetailText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingBottom="8dp"
+                            android:text="IT Service Management"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:text="See More >"
+                    android:textColor="@color/grey"
+                    android:onClick="seeDetailTraining"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

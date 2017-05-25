@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <!--android:background="@mipmap/back_login"-->
+
+    <!--android:drawableLeft="@mipmap/account"-->
+    <!---->
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/user_hint"
+        android:inputType="text"
+        android:paddingLeft="0dp"
+        android:textColor="#000"
+        android:textColorHint="#999" />
+
+    <!--android:drawableLeft="@mipmap/lock"-->
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/pass_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="0dp"
+        android:textColor="#000"
+        android:textColorHint="#999" />
+
+    <!--android:background="@drawable/selector_xml_btn_yellow"-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:onClick="checkLogin"
+        android:text="Log in" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Login Hint"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFF" />
+
+</LinearLayout>
