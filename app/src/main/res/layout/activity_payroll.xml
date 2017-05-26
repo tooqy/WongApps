@@ -31,6 +31,7 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/txtPayrollPeriod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
@@ -44,7 +45,7 @@
                 android:layout_weight="0.1"
                 android:gravity="center"
                 android:inputType="time"
-                android:onClick="viewApprovalLeave"
+                android:onClick="viewListPayrollAll"
                 android:text="Find"
                 android:textAllCaps="true" />
         </TableRow>
@@ -58,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idPayrollHead"
-        tools:context="employee.leave.LeaveActivity">
+        tools:context="employee.leave.PayrollActivity">
 
         <LinearLayout
             android:id="@+id/linBody"
@@ -72,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:onClick="viewDetailBonus">
+                android:onClick="viewDetailPayroll">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -97,7 +98,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="8dp"
                             android:gravity="center"
-                            android:text=""
+                            android:text="Pay Date: 24 Mei 2017"
                             android:textColor="#000000"
                             android:textSize="16sp" />
 
@@ -108,7 +109,7 @@
                             android:layout_marginLeft="8dp"
                             android:layout_marginTop="20dp"
                             android:gravity="left"
-                            android:text="I am going to My Grandmom's home"
+                            android:text="Net Amount : IDR 15,750,000"
                             android:textColor="#757575"
                             android:textSize="16sp" />
 

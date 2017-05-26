@@ -17,6 +17,7 @@ import employee.attendance.AttendanceActivity;
 import employee.information.EmployeeInformationActivity;
 import employee.leave.LeaveActivity;
 import employee.payroll.PayrollActivity;
+import employee.payroll.PayrollAllActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openPayroll(View view) {
-        Intent intent = new Intent(this, PayrollActivity.class);
+        Intent intent = new Intent(this, PayrollAllActivity.class);
         startActivity(intent);
     }
 }

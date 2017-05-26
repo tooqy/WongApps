@@ -37,6 +37,8 @@
         </activity>
         <activity android:name="employee.payroll.PayrollDetailActivity" >
         </activity>
+        <activity android:name="employee.payroll.PayrollAllActivity" >
+        </activity>
     </application>
 
 </manifest>

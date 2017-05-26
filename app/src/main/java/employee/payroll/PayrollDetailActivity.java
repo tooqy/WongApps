@@ -13,7 +13,7 @@ public class PayrollDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payroll_detail);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Leave");
+        getSupportActionBar().setTitle("Payroll Detail");
     }
 
     @Override

@@ -28,22 +28,26 @@
             android:textSize="@dimen/text_16"
             android:textStyle="bold" />
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"
-            android:text="05/05/2017" />
-
+            android:text="May 2017"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="left"
             android:paddingBottom="8dp"
             android:paddingTop="10dp"
-            android:text=" "
+            android:text="Allowance (IDR)"
             android:textAllCaps="true"
-            android:textColor="@color/grey"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/text_16"
             android:textStyle="bold" />
 
@@ -60,9 +64,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:gravity="center"
-                    android:text="Time In"
-                    android:textAllCaps="true"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="Basic Salary"
                     android:textColor="@color/grey"
                     android:textSize="@dimen/text_16"
                     android:textStyle="bold" />
@@ -71,35 +75,306 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:gravity="center"
-                    android:text="Time Out"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="15,500,000"
                     android:textAllCaps="true"
                     android:textColor="@color/grey"
-                    android:textSize="@dimen/text_16"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/text_16" />
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:gravity="center"
-                    android:inputType="time"
-                    android:text="07:55" />
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="Incentive"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:gravity="center"
-                    android:inputType="date"
-                    android:text="17:15" />
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="1,000,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="Communication"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="250,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="Tax Allowance"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="1,161,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text="Total Allowance"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="16,911,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
             </TableRow>
         </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"
+            android:text="Deduction (IDR)"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="Tax "
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="1,161,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="BPJS Ketenagakerjaan"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="290,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:text="BPJS Kesehatan"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="100,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_16" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text="Total Deduction"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="1,161,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"
+            android:text="Take Home Pay Salary (IDR)"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 2 columns -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text="Net Amount Salary"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="15,750,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -114,20 +389,16 @@
             android:textSize="@dimen/text_16"
             android:textStyle="bold" />
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="125sp"
+            android:layout_height="50sp"
             android:layout_marginBottom="10dp"
             android:gravity="top"
-            android:hint="Your Reason"
+            android:paddingLeft="15dp"
+            android:text="Payment Date on 24 Mei 2017"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/grey"
             android:inputType="text" />
-
-        <Button
-            android:id="@+id/btnCorrection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="sendRequestCorrection"
-            android:text="Request Correction" />
 
     </LinearLayout>
 
