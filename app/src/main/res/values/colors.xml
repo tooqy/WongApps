@@ -7,7 +7,9 @@
     <!-- Custom Color -->
     <color name="merah">#FF0000</color>
     <color name="kuning">#FFFF00</color>
+    <color name="orange">#ff970f</color>
     <color name="blue">#3F51EE</color>
     <color name="grey">#757575</color>
+    <color name="hijau">#00FF00</color>
 
 </resources>

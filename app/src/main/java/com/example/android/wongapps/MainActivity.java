@@ -13,7 +13,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import employee.attendance.AttendanceActivity;
 import employee.information.EmployeeInformationActivity;
+import employee.leave.LeaveActivity;
+import employee.payroll.PayrollActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast toastLogin = Toast.makeText(MainActivity.this, "    Thank you " + sessionUser + "! Have a good day!", Toast.LENGTH_SHORT);
+                        Toast toastLogin = Toast.makeText(MainActivity.this, "    Thank you " + sessionUser + ", Have a good day!", Toast.LENGTH_SHORT);
                         toastLogin.setGravity(Gravity.CENTER, 0, 0);
                         toastLogin.show();
 
@@ -100,6 +103,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void openEmpInfo(View view) {
         Intent intent = new Intent(this, EmployeeInformationActivity.class);
+        startActivity(intent);
+    }
+
+    public void openAttendance(View view) {
+        Intent intent = new Intent(this, AttendanceActivity.class);
+        startActivity(intent);
+    }
+
+    public void openLeave(View view) {
+        Intent intent = new Intent(this, LeaveActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPayroll(View view) {
+        Intent intent = new Intent(this, PayrollActivity.class);
         startActivity(intent);
     }
 }

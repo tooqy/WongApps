@@ -9,8 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity" >
-        </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".HelpActivity" />
         <activity
@@ -22,13 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="employee.information.EmployeeInformationActivity" >
+        <activity android:name="employee.information.EmployeeInformationActivity" />
+        <activity android:name="employee.information.DetailPersonalActivity" />
+        <activity android:name="employee.information.DetailEmploymentActivity" />
+        <activity android:name="employee.information.DetailTrainingActivity" />
+        <activity android:name="employee.attendance.AttendanceActivity" />
+        <activity android:name="employee.attendance.AttendanceDetailActivity" />
+        <activity android:name="employee.attendance.AttendanceCorrectionActivity" />
+        <activity android:name="employee.leave.LeaveActivity" />
+        <activity android:name="employee.leave.LeaveRequestActivity" />
+        <activity android:name="employee.leave.LeaveApprovalActivity" />
+        <activity android:name="employee.leave.LeaveApprovalApprovedActivity" />
+        <activity android:name="employee.leave.LeaveApprovalRejectedActivity" />
+        <activity android:name="employee.payroll.PayrollActivity" >
         </activity>
-        <activity android:name="employee.information.DetailPersonalActivity" >
-        </activity>
-        <activity android:name="employee.information.DetailEmploymentActivity" >
-        </activity>
-        <activity android:name="employee.information.DetailTrainingActivity" >
+        <activity android:name="employee.payroll.PayrollDetailActivity" >
         </activity>
     </application>
 
