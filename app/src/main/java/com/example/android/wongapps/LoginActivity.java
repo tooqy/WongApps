@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        if (username.getText().toString().equals("admin") && username.getText().toString().equals("12345")) {
+        if (username.getText().toString().equals("admin") && password.getText().toString().equals("12345")) {
             toastLogin = Toast.makeText(this, "Welcome back, " + username.getText() + "!", Toast.LENGTH_SHORT);
             toastLogin.setGravity(Gravity.CENTER, 0, 0);
             toastLogin.show();
@@ -50,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("username", username.getText().toString());
             startActivity(intent);
+            finish();
         } else {
             toastLogin = Toast.makeText(this, "Please see [Login Hint] for login!", Toast.LENGTH_LONG);
             toastLogin.setGravity(Gravity.CENTER, 0, 0);

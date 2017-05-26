@@ -5,6 +5,20 @@
     android:orientation="vertical"
     android:padding="40dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:src="@drawable/bannerr" />
+    </RelativeLayout>
+
     <!--android:background="@mipmap/back_login"-->
 
     <!--android:drawableLeft="@mipmap/account"-->
@@ -13,7 +27,7 @@
         android:id="@+id/txtUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="80dp"
         android:drawablePadding="5dp"
         android:ems="10"
         android:hint="@string/user_hint"
@@ -51,9 +65,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="Login Hint"
         android:onClick="viewHint"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/colorAccent" />
 
