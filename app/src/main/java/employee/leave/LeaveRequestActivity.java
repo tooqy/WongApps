@@ -36,5 +36,6 @@ public class LeaveRequestActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, LeaveActivity.class);
         startActivity(intent);
+        finish();
     }
 }

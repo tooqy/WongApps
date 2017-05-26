@@ -10,5 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Ini Help"/>
+        android:onClick="openUrl"
+        android:textSize="@dimen/text_25"
+        android:text="Visit: \nwww.tooqy.com \nfor help and support"/>
 </RelativeLayout>

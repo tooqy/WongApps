@@ -10,7 +10,18 @@
 
 
     <string name="about">
-        Lorem ipsum dolor sit amet, ne per perfecto tractatos imperdiet, cu tale epicuri accusata ius. An simul insolens urbanitas duo. Eu iudicabit sententiae est, eam id tota sententiae accommodare. No qui homero consulatu reprimique. Eum in forensibus dissentias.
+        Wong Apps version 1.0.1 is Human Resource Management System for user daily operation.
+        \n\n
+        Features:\n
+        1. Employee Information\n
+        2. Attendance Management\n
+        3. Leave Management\n
+        4. Payroll History
+
+        \n\n
+        Developer: \n
+        Name: Mastuki\n
+        Email: mastuki07@gmail.com\n
     </string>
 
 </resources>

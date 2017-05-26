@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import employee.attendance.AttendanceActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText username;
@@ -33,14 +35,29 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.txtUsername);
         password = (EditText) findViewById(R.id.txtPassword);
 
-        toastLogin = Toast.makeText(this, "Welcome back, " + username.getText() + "!", Toast.LENGTH_SHORT);
-        toastLogin.setGravity(Gravity.CENTER, 0, 0);
-        toastLogin.show();
+        if (username.getText().toString().equals("") || username.getText().toString().equals("")) {
+            toastLogin = Toast.makeText(this, "Please fill username and password!", Toast.LENGTH_LONG);
+            toastLogin.setGravity(Gravity.CENTER, 0, 0);
+            toastLogin.show();
+            return;
+        }
 
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("username", username.getText().toString());
-        startActivity(intent);
+        if (username.getText().toString().equals("admin") && username.getText().toString().equals("12345")) {
+            toastLogin = Toast.makeText(this, "Welcome back, " + username.getText() + "!", Toast.LENGTH_SHORT);
+            toastLogin.setGravity(Gravity.CENTER, 0, 0);
+            toastLogin.show();
 
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("username", username.getText().toString());
+            startActivity(intent);
+        } else {
+            toastLogin = Toast.makeText(this, "Please see [Login Hint] for login!", Toast.LENGTH_LONG);
+            toastLogin.setGravity(Gravity.CENTER, 0, 0);
+            toastLogin.show();
+
+            username.setText("");
+            password.setText("");
+        }
     }
 
     public void onBackPressed() {
@@ -63,5 +80,13 @@ public class LoginActivity extends AppCompatActivity {
             super.onBackPressed();
             return;
         }
+    }
+
+    public void viewHint(View view) {
+        String msg = "      Login Hint\nUsername: admin\nPassword:12345";
+        Toast toastLogin = Toast.makeText(this, msg, Toast.LENGTH_LONG);
+        toastLogin.setGravity(Gravity.CENTER, 0, 0);
+        toastLogin.show();
+
     }
 }

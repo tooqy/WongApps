@@ -16,6 +16,8 @@
     <dimen name="text_35">35sp</dimen>
     <dimen name="text_40">40sp</dimen>
 
+    <dimen name="image_75">75dp</dimen>
+    <dimen name="image_80">80dp</dimen>
     <dimen name="image_100">100dp</dimen>
     <dimen name="image_125">125dp</dimen>
     <dimen name="image_150">150dp</dimen>

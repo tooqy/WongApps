@@ -53,7 +53,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:text="Login Hint"
+        android:onClick="viewHint"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#FFF" />
+        android:textColor="@color/colorAccent" />
 
 </LinearLayout>

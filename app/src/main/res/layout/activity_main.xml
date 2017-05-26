@@ -1,48 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Main Menu!" />
+    <ImageView
+        android:id="@+id/mainBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_75"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bannerr" />
 
 
-    <Button
-        android:id="@+id/btnEmpInfo"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/mainBanner"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" " />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_250"
+                android:paddingBottom="20dp"
+                android:src="@drawable/performance" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_250"
+                android:paddingBottom="20dp"
+                android:src="@drawable/talent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_250"
+                android:src="@drawable/objective" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text=" " />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_250"
+                android:src="@drawable/objective" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="openEmpInfo"
-        android:text="Employee Information" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
 
-    <Button
-        android:id="@+id/btnAttendance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="openAttendance"
-        android:text="Attendance" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnLeave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="openLeave"
-        android:text="Leave" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEmpInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_80"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:onClick="openEmpInfo"
+                android:text="Employee Information" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"></View>
 
 
-    <Button
-        android:id="@+id/btnPayroll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="openPayroll"
-        android:text="Payroll" />
+            <Button
+                android:id="@+id/btnAttendance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_80"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:onClick="openAttendance"
+                android:text="Attendance" />
 
-</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_80"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:onClick="openLeave"
+                android:text="Leave" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"></View>
+
+
+            <Button
+                android:id="@+id/btnPayroll"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_80"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:onClick="openPayroll"
+                android:text="Payroll" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

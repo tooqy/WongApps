@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorPrimary"
     tools:context="com.example.android.androidkejar_2.splashScreen.SplashActivity">
 
     <ImageView
@@ -15,7 +15,7 @@
     android:layout_width="250dp"
     android:layout_height="250dp"
     android:layout_centerInParent="true"
-    android:src="@drawable/school" />
+    android:src="@drawable/logo" />
 
     <!--<de.hdodenhof.circleimageview.CircleImageView-->
         <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->

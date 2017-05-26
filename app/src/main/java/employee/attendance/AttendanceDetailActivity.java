@@ -35,5 +35,6 @@ public class AttendanceDetailActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, AttendanceActivity.class);
         startActivity(intent);
+        finish();
     }
 }
